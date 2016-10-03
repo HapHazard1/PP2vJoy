@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PP2vJoyFeeder>
+  <joystick>
+    <name>Atari 2600</name>
+    <pollingRate>100</pollingRate>
+    <PPortInfo>
+      <portNum>888</portNum>
+      <type>digital</type>
+      <!--
+         These entries will be contained in a hash set with the name of the
+         element as key and the pair of mask and value stored as a 1x2 array
+         of integers for the value.  The first pair "none" is required and
+         represents a state of no activity on the connected joystick.  All
+         other pairs are optional.  Naming of pairs must match entries in the
+         following VJoyInfo section.
+       -->
+      <values>
+        <none>
+          <mask>63488</mask>
+          <value>30720</value>
+        </none>
+        <!-- fire -->
+        <s1>
+          <mask>2048</mask>
+          <value>0</value>
+        </s1>
+        <!-- up -->
+        <s2>
+          <mask>4096</mask>
+          <value>0</value>
+        </s2>
+        <!-- down -->
+        <s3>
+          <mask>8192</mask>
+          <value>0</value>
+        </s3>
+        <!-- right -->
+        <s4>
+          <mask>16384</mask>
+          <value>0</value>
+        </s4>
+        <!-- left -->
+        <s5>
+          <mask>32768</mask>
+          <value>32768</value>
+        </s5> 
+      </values>
+    </PPortInfo>
+    <VJoyInfo>
+      <!--
+        These entries will be contained in a hash set with name as key and value as value
+       -->
+      <Button1>s1</Button1>
+      <AxisX-max>s4</AxisX-max>
+      <AxisX-min>s5</AxisX-min>
+      <AxisY-max>s3</AxisY-max>
+      <AxisY-min>s2</AxisY-min>
+    </VJoyInfo>
+  </joystick>
+  <joystick>
+    <name>2nd Entry</name>
+    <pollingRate>400</pollingRate>
+    <PPortInfo>
+      <portNum>888</portNum>
+      <type>digital</type>
+      <!--
+         These entries will be contained in a hash set with the name of the
+         element as key and the pair of mask and value stored as a 1x2 array
+         of integers for the value.  The first pair "none" is required and
+         represents a state of no activity on the connected joystick.  All
+         other pairs are optional.  Naming of pairs must match entries in the
+         following VJoyInfo section.
+       -->
+      <values>
+        <none>
+          <mask>63488</mask>
+          <value>30720</value>
+        </none>
+        <!-- fire -->
+        <s1>
+          <mask>2048</mask>
+          <value>0</value>
+        </s1>
+        <!-- up -->
+        <s2>
+          <mask>4096</mask>
+          <value>0</value>
+        </s2>
+        <!-- down -->
+        <s3>
+          <mask>8192</mask>
+          <value>0</value>
+        </s3>
+        <!-- right -->
+        <s4>
+          <mask>16384</mask>
+          <value>0</value>
+        </s4>
+        <!-- left -->
+        <s5>
+          <mask>32768</mask>
+          <value>1</value>
+        </s5> 
+      </values>
+    </PPortInfo>
+    <VJoyInfo>
+      <!--
+        These entries will be contained in a hash set with name as key and value as value
+       -->
+      <Button1>s1</Button1>
+      <AxisX-max>s4</AxisX-max>
+      <AxisX-min>s5</AxisX-min>
+      <AxisY-max>s2</AxisY-max>
+      <AxisY-min>s3</AxisY-min>
+    </VJoyInfo>
+  </joystick>
+</PP2vJoyFeeder>
